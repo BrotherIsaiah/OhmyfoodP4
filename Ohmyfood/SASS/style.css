@@ -1,0 +1,125 @@
+/* Variables */
+/* Mixin */
+/* Code */
+* {
+  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.localisation {
+  background-color: #EAEAEA;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+header img {
+  margin: 0 25%;
+  padding: 10px;
+}
+
+h1 {
+  margin-top: 0;
+  padding-top: 20px;
+}
+
+.intro {
+  text-align: center;
+  background: #F6F6F6;
+  padding-bottom: 30px;
+}
+.intro .text-intro {
+  margin: 0 30px 0 30px;
+  font-size: larger;
+}
+
+button {
+  border: none;
+  border-radius: 50px;
+  padding: 15px;
+  background: linear-gradient(#FF79DA, #9356DC);
+}
+button a {
+  color: white;
+  text-decoration: none;
+}
+
+.fonctionnement {
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  margin-top: 1em;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  background: #F6F6F6;
+}
+
+.resto-section {
+  background: #F6F6F6;
+}
+.resto-section img {
+  width: 100%;
+  height: 130px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+
+.restaurant {
+  display: flex;
+  background-color: white;
+  border-radius: 20px;
+  flex-direction: column;
+  margin: 0 20px 0 20px;
+}
+
+.resto-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+footer {
+  background: #353535;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+footer ul {
+  padding: 0;
+}
+footer li {
+  display: flex;
+  gap: 10px;
+}
+footer img {
+  filter: invert(100%);
+  width: 30%;
+}
+
+/* Desktop */
+@media screen and (min-width: 768px) {
+  header img {
+    margin: 0 40%;
+    width: 20%;
+  }
+}/*# sourceMappingURL=style.css.map */

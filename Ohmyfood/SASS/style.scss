@@ -1,0 +1,142 @@
+/* Variables */
+$button-form: linear-gradient( #FF79DA, #9356DC);
+$location-color: #EAEAEA;
+$background-color:#F6F6F6;
+/* Mixin */
+@mixin button-link{
+    border: none;
+    border-radius: 50px;
+    padding: 15px;
+    a{
+        color: white;
+        text-decoration: none;
+    }
+}
+
+@mixin fonctionnement{
+    border:none;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 1em;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+@mixin icon-info{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+@mixin resto-card{
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+    flex-direction: column;
+    margin: 0 20px 0 20px;
+}
+
+
+/* Code */
+*{font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    margin: 0;
+}
+.localisation{
+background-color: $location-color;
+@include icon-info
+}
+
+header img{
+    margin: 0 25%;
+    padding: 10px;
+}
+
+h1{
+    margin-top: 0;
+    padding-top: 20px;
+}
+
+.intro{
+    text-align: center;
+    background: $background-color;
+    padding-bottom: 30px;
+    .text-intro{
+        margin: 0 30px 0 30px;
+  font-size: larger;
+    }
+}
+
+button{
+    @include button-link;
+    background: $button-form;
+}
+
+.fonctionnement{
+    @include fonctionnement;
+ @include icon-info;
+    background: $background-color;
+}
+
+.resto-section{
+    background: $background-color;
+    img{
+        width: 100%;
+        height: 130px;
+        object-fit: cover;
+        border-radius: 20px 20px 0 0;
+    }
+    
+}
+
+.restaurant{
+    @include resto-card
+}
+
+.resto-cards{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card-content{
+    display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+footer{
+    background: #353535;
+    color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+ul{
+    padding: 0;
+}
+  li{
+    display: flex;
+    gap: 10px;
+}
+img{
+    filter: invert(100%);
+    width: 30%;
+}
+}
+
+/* Desktop */
+
+@media screen and (min-width: 768px)
+{
+    header img{
+        margin: 0 40%;
+        
+        width: 20%;
+    }
+}
